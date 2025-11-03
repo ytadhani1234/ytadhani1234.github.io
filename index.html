@@ -1,286 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yog Tadhani | Portfolio</title>
-  <meta name="description" content="Portfolio of Yog Tadhani — CS Major @ UVA, Software Engineer, Research Assistant." />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Favicons (optional) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🧠</text></svg>">
 </head>
+
 <body>
   <!-- Navbar -->
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a href="#" class="brand">YT.</a>
+  <nav>
+    <div class="container nav-container">
+      <a href="#home" class="logo">YT</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact" class="pill">Contact</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero" id="home" role="banner" aria-label="Intro">
-    <div class="overlay"></div>
-    <div class="container hero-inner">
-      <h1>Hi, I’m <span class="accent">Yog Tadhani</span> 👋 — CS Major @ UVA</h1>
-      <p class="sub">
-        <span id="typer" aria-live="polite">Software Engineer</span>
-        <span class="cursor" aria-hidden="true">|</span>
-      </p>
-      <div class="cta">
-        <a href="resume.pdf" class="btn primary" target="_blank" rel="noopener">View My Resume</a>
-        <a href="#projects" class="btn">Explore My Projects</a>
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Hi, I’m <span class="highlight">Yog Tadhani</span> 👋</h1>
+      <p>CS Major @ University of Virginia</p>
+      <p class="sub">Software Engineer · Research Assistant · Problem Solver</p>
+      <div class="buttons">
+        <a href="resume.pdf" target="_blank" class="btn primary">View My Resume</a>
         <a href="#contact" class="btn outline">Contact Me</a>
       </div>
     </div>
   </header>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about" class="section">
     <div class="container">
       <h2>About Me</h2>
-      <div class="about-grid">
-        <div>
-          <p>
-            I’m a 3rd-year Computer Science student at the University of Virginia (GPA 3.8/4.0) with a minor in Engineering Business. 
-            I love building reliable backend systems, applying AI/ML pragmatically, and turning data into decisions.
-          </p>
-          <p class="muted">
-            Relevant coursework: Software Engineering, Data Structures & Algorithms (incl. Graph Theory), Machine Learning in Image Analysis, 
-            Computer Systems & Organization (Assembly & C), Digital Logic, Linear Algebra, Calculus.
-          </p>
-          <ul class="badges">
-            <li>Backend systems</li>
-            <li>Optimization & HPC</li>
-            <li>Applied AI/ML</li>
-            <li>Dev UX & Tooling</li>
-          </ul>
-        </div>
-        <div class="about-card">
-          <!-- Replace this placeholder with an actual headshot if you want -->
-          <div class="avatar" aria-hidden="true">YT</div>
-          <div class="about-meta">
-            <div><strong>University:</strong> UVA</div>
-            <div><strong>GPA:</strong> 3.8/4.0</div>
-            <div><strong>Location:</strong> Charlottesville, VA</div>
-            <div><strong>Email:</strong> <a href="mailto:ans9mv@virginia.edu">ans9mv@virginia.edu</a></div>
-            <div class="socials">
-              <a href="https://github.com/ytadhani1234" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://linkedin.com/in/yogtadhani" target="_blank" rel="noopener">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr class="divider" />
+      <p>
+        I’m a 3rd-year Computer Science student at the University of Virginia (GPA 3.8/4.0),
+        passionate about backend systems, optimization, and applied AI.
+        My focus is on building scalable and secure software while learning the science behind technology.
+      </p>
     </div>
   </section>
 
-  <!-- Experience (Timeline) -->
+  <!-- Experience Section -->
   <section id="experience" class="section alt">
     <div class="container">
       <h2>Experience</h2>
-
-      <ol class="timeline">
-        <li>
-          <div class="dot" aria-hidden="true"></div>
-          <div class="card">
-            <div class="card-head">
-              <h3>Software Engineering Intern — Organised Co (London, UK)</h3>
-              <span class="chip">Jun 2025 – Jul 2025</span>
-            </div>
-            <p>
-              Built a scalable backend sync system (hexagonal architecture) integrating the Wix REST API to update supplier product data in real time, 
-              persisted in MongoDB. Leveraged an AI coding agent for rapid prototyping and more robust integrations. 
-            </p>
-            <ul class="tech">
-              <li>Wix REST API</li><li>MongoDB</li><li>Backend Sync</li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <div class="dot" aria-hidden="true"></div>
-          <div class="card">
-            <div class="card-head">
-              <h3>General Research Assistant — UVA Darden School of Business</h3>
-              <span class="chip">Sept 2024 – May 2025</span>
-            </div>
-            <p>
-              Analyzed mobile money transactions using UVA’s Rivanna HPC with Python, Pandas, and NumPy; 
-              built optimization models in Gurobi (LP/ILP) to maximize system-wide profit and efficiency.
-            </p>
-            <ul class="tech">
-              <li>Python</li><li>Pandas</li><li>NumPy</li><li>Gurobi</li><li>HPC</li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <div class="dot" aria-hidden="true"></div>
-          <div class="card">
-            <div class="card-head">
-              <h3>Tier 1 Supervisor (Web) — IRDI Business Group</h3>
-              <span class="chip">Jan 2025 – May 2025</span>
-            </div>
-            <p>
-              Led development of a secure company website (Laravel/PHP/SQLite), enforced security, and managed admin/visitor interfaces. 
-              Earlier as Web Dev Intern, improved WordPress performance and security (reCAPTCHA), grew traffic to 20K views and onboarded 300+ users.
-            </p>
-            <ul class="tech">
-              <li>Laravel</li><li>PHP</li><li>SQLite</li><li>WordPress</li><li>reCAPTCHA</li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <div class="dot" aria-hidden="true"></div>
-          <div class="card">
-            <div class="card-head">
-              <h3>Quantum Physics Research Assistant — UVA Physics</h3>
-              <span class="chip">Aug 2023 – May 2024</span>
-            </div>
-            <p>
-              Built Python models for holographic laser beam shaping; used NumPy & Matplotlib to analyze data and improve precision of light pattern prediction.
-            </p>
-            <ul class="tech">
-              <li>Python</li><li>NumPy</li><li>Matplotlib</li>
-            </ul>
-          </div>
-        </li>
-      </ol>
+      <ul class="timeline">
+        <li><b>Software Engineering Intern — Organised Co (London, UK)</b><br>
+          Built a scalable backend sync system using Wix REST API and MongoDB.</li>
+        <li><b>Research Assistant — UVA Darden School of Business</b><br>
+          Analyzed financial data using Python and optimization with Gurobi on UVA’s HPC system.</li>
+        <li><b>Tier 1 Supervisor (Web) — IRDI Business Group</b><br>
+          Led development of secure company web systems (Laravel/PHP) and improved site reliability.</li>
+        <li><b>Quantum Physics Research Assistant — UVA Physics</b><br>
+          Built computational models in Python for holographic laser beam shaping.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
       <h2>Projects</h2>
-      <div class="cards-grid">
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>UVA Bus Route Management System</h3>
-            <a class="chip link" href="https://github.com/your-username/your-bus-route-repo" target="_blank" rel="noopener">GitHub</a>
-          </div>
-          <p>Java + SQLite + REST data parsing via UVA Devhub API. Computes closest bus stop and recommends optimal route.</p>
-          <div class="thumb placeholder">Add GIF / screenshot</div>
-        </article>
-
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>Karabi — Timely Communication App</h3>
-            <a class="chip link" href="https://github.com/your-username/karabi" target="_blank" rel="noopener">GitHub</a>
-          </div>
-          <p>React Native + Firebase (backend team lead). Smooth client ↔ server interaction, real-time capabilities, team leadership.</p>
-          <div class="thumb placeholder">Add GIF / screenshot</div>
-        </article>
-
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>Unity Games — A Shot in the Dark & SunnyLand</h3>
-            <a class="chip link" href="https://github.com/your-username/unity-zombie-game" target="_blank" rel="noopener">GitHub</a>
-          </div>
-          <p>Unity + C# + Firebase auth; implemented smart inventory and camera systems, secure progress storage.</p>
-          <div class="thumb placeholder">Add GIF / screenshot</div>
-        </article>
+      <div class="projects">
+        <div class="project">
+          <h3>UVA Bus Route System</h3>
+          <p>Java + SQLite + REST API — Computes optimal routes for campus transport.</p>
+          <!-- <img src="images/bus-project.png" alt="Bus Project Screenshot"> -->
+        </div>
+        <div class="project">
+          <h3>Karabi Mobile App</h3>
+          <p>React Native + Firebase — Real-time communication app built with a student team.</p>
+          <!-- <img src="images/karabi.png" alt="Karabi App Screenshot"> -->
+        </div>
+        <div class="project">
+          <h3>Unity Game Projects</h3>
+          <p>Unity + C# — Designed game logic and inventory systems with secure save progress.</p>
+          <!-- <img src="images/unity-game.png" alt="Unity Game Screenshot"> -->
+        </div>
       </div>
+      <p class="note">*Project images and GitHub links coming soon.</p>
     </div>
   </section>
 
-  <!-- Skills -->
+  <!-- Skills Section -->
   <section id="skills" class="section alt">
     <div class="container">
       <h2>Skills</h2>
-      <div class="chips">
-        <span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span>
-        <span>React</span><span>Node.js</span><span>Hibernate</span>
-        <span>Git</span><span>Firebase</span><span>Unity</span><span>Linux</span>
+      <div class="skills">
+        <span>Java</span><span>Python</span><span>JavaScript</span>
+        <span>React</span><span>Node.js</span><span>SQL</span>
+        <span>Firebase</span><span>Git</span><span>Unity</span><span>Linux</span>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact</h2>
-      <p class="muted">I’m open to internships, research collaborations, and software engineering roles.</p>
-      <!-- Replace YOUR_FORMSPREE_ID with your Formspree endpoint -->
-      <form class="contact" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-        <label>
-          Name
-          <input type="text" name="name" placeholder="Your name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="_replyto" placeholder="you@example.com" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
-        </label>
-        <button type="submit" class="btn primary">Send Message</button>
-      </form>
-
-      <div class="contact-links">
-        <a href="mailto:ans9mv@virginia.edu">Email</a>
-        <a href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
-        <a href="https://github.com/ytadhani1234" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/yogtadhani" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+      <p>Reach out anytime — I’d love to connect!</p>
+      <p class="contact-links">
+        <a href="mailto:ans9mv@virginia.edu">Email</a> · 
+        <a href="https://github.com/ytadhani1234" target="_blank">GitHub</a> · 
+        <a href="https://linkedin.com/in/yogtadhani" target="_blank">LinkedIn</a>
+      </p>
     </div>
   </section>
 
-  <footer class="footer">
+  <!-- Footer -->
+  <footer>
     <div class="container">
-      <p>© <span id="y"></span> Yog Tadhani — Built with HTML & CSS • UVA colors • Accessibility-first</p>
+      <p>© <span id="year"></span> Yog Tadhani · Built with ❤️ at UVA</p>
     </div>
   </footer>
 
-  <!-- Minimal typing + fade-in JS (no frameworks) -->
   <script>
-    // Year
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // Typer
-    const roles = [
-      "Software Engineer",
-      "Research Assistant",
-      "Problem Solver"
-    ];
-    let i = 0, j = 0, deleting = false;
-    const el = document.getElementById('typer');
-
-    function type() {
-      const full = roles[i];
-      if (!deleting) {
-        el.textContent = full.slice(0, j++);
-        if (j > full.length + 10) deleting = true;  // pause
-      } else {
-        el.textContent = full.slice(0, j--);
-        if (j < 0) { deleting = false; i = (i + 1) % roles.length; }
-      }
-      requestAnimationFrame(() => setTimeout(type, 70));
-    }
-    type();
-
-    // Reveal on scroll
-    const revealEls = document.querySelectorAll('.section, .proj-card, .timeline .card');
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('reveal'); });
-    }, { threshold: 0.1 });
-    revealEls.forEach(el => io.observe(el));
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
