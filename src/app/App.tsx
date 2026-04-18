@@ -350,9 +350,9 @@ export default function App() {
       <section id="skills" className="bg-[#F5F5F5] py-[80px]">
         <div className="max-w-[900px] mx-auto px-8">
           <div className="text-center mb-12">
-            <p className="text-[#E57200] uppercase font-bold text-[13px] tracking-[0.15em] mb-4">
+            {/* <p className="text-[#E57200] uppercase font-bold text-[13px] tracking-[0.15em] mb-4">
               Skills
-            </p>
+            </p> */}
             <h2 className="text-[#232D4B] font-bold text-[40px]" style={{ fontFamily: 'Sora, sans-serif' }}>
               What I Work With
             </h2>
@@ -363,10 +363,10 @@ export default function App() {
             <div>
               <h3 className="text-[#E57200] font-bold text-[16px] mb-4">Languages</h3>
               <div className="flex flex-wrap gap-2">
-                {['Python', 'JavaScript', 'TypeScript', 'Java', 'C++', 'SQL'].map((skill) => (
+                {['Java', 'Python', 'C/C++', 'JavaScript', 'SQL', 'HTML/CSS', 'JSON/XML'].map((skill) => (
                   <span
                     key={skill}
-                    className="bg-white border border-[#DDE3F0] text-[#232D4B] px-4 py-2 rounded-lg text-[13px]"
+                    className="bg-white border border-[#DDE3F0] text-[#232D4B] px-4 py-2 rounded-lg text-[13px] hover:shadow-md transition"
                   >
                     {skill}
                   </span>
@@ -376,12 +376,22 @@ export default function App() {
 
             {/* Tools */}
             <div>
-              <h3 className="text-[#E57200] font-bold text-[16px] mb-4">Tools</h3>
+              <h3 className="text-[#E57200] font-bold text-[16px] mb-4">Tools & Technologies</h3>
               <div className="flex flex-wrap gap-2">
-                {['Git', 'Docker', 'AWS', 'PostgreSQL', 'MongoDB', 'Figma'].map((skill) => (
+                {[
+                  'Git/GitHub',
+                  'Firebase',
+                  'WordPress',
+                  'Google reCAPTCHA',
+                  'MATLAB',
+                  'Unity',
+                  'Linux/Unix',
+                  'SolidWorks',
+                  'Microsoft Office'
+                ].map((skill) => (
                   <span
                     key={skill}
-                    className="bg-white border border-[#DDE3F0] text-[#232D4B] px-4 py-2 rounded-lg text-[13px]"
+                    className="bg-white border border-[#DDE3F0] text-[#232D4B] px-4 py-2 rounded-lg text-[13px] hover:shadow-md transition"
                   >
                     {skill}
                   </span>
@@ -391,12 +401,20 @@ export default function App() {
 
             {/* Frameworks */}
             <div>
-              <h3 className="text-[#E57200] font-bold text-[16px] mb-4">Frameworks</h3>
+              <h3 className="text-[#E57200] font-bold text-[16px] mb-4">Frameworks & Libraries</h3>
               <div className="flex flex-wrap gap-2">
-                {['React', 'Node.js', 'Express', 'Django', 'Flask', 'Tailwind'].map((skill) => (
+                {[
+                  'React',
+                  'Node.js',
+                  'Django',
+                  'JUnit',
+                  'JDBC',
+                  'Hibernate',
+                  'Express'
+                ].map((skill) => (
                   <span
                     key={skill}
-                    className="bg-white border border-[#DDE3F0] text-[#232D4B] px-4 py-2 rounded-lg text-[13px]"
+                    className="bg-white border border-[#DDE3F0] text-[#232D4B] px-4 py-2 rounded-lg text-[13px] hover:shadow-md transition"
                   >
                     {skill}
                   </span>
@@ -440,7 +458,7 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-[#232D4B] border-t border-white/10 py-6">
         <div className="max-w-[1440px] mx-auto px-8 text-center">
-          <p className="text-[#B0B8C9] text-[13px]">© 2025 Yog Tadhani</p>
+          <p className="text-[#B0B8C9] text-[13px]">© 2026 Yog Tadhani</p>
         </div>
       </footer>
     </div>
