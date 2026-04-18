@@ -57,46 +57,50 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="min-h-[90vh] bg-[#232D4B] flex items-center pt-16">
-        <div className="max-w-[1440px] mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20">
-          <div className="space-y-6">
-            <p className="text-white text-[20px] font-light">Hi, I'm</p>
+        <div className="max-w-[1440px] mx-auto px-10 lg:px-16 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-20">
+          <div className="space-y-7 max-w-[680px] pl-4 lg:pl-10">
+            <p className="text-white text-[28px] font-light tracking-[0.01em]">Hi, I'm</p>
             <h1
-              className="text-white font-bold leading-[1.1]"
+              className="text-white font-bold leading-[1.05]"
               style={{ fontFamily: 'Sora, sans-serif', fontSize: '76px' }}
             >
               Yog Tadhani
             </h1>
-            <p className="text-[#E57200] text-[20px] font-medium">
-              Computer Science major & Engineering Business minor
-            </p>
-            <p className="text-white text-[18px] font-light">
-              at the University of Virginia
-            </p>
-            <p className="text-[#B0B8C9] text-[15px] leading-relaxed">
-              Interested in software engineering, product thinking, and building practical tools that solve real problems.
-            </p>
-            <div className="flex gap-4 pt-6">
+
+            <div className="space-y-2">
+              <p className="text-white text-[28px] font-semibold leading-tight">
+                University of Virginia, School of Engineering
+              </p>
+              <p className="text-[#E57200] text-[20px] font-medium leading-relaxed">
+                Computer Science BS <span className="text-white/50">|</span> Engineering Business Minor
+              </p>
+            </div>
+
+            <div className="flex gap-4 pt-4">
               <button
-                onClick={() => scrollToSection('projects')}
+                onClick={() => scrollToSection('contact')}
                 className="bg-[#E57200] text-white px-8 py-3 rounded-full hover:bg-[#cc6600] transition-colors"
               >
-                View My Work
+                Contact Me
               </button>
               <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#232D4B] transition-colors">
-                Download Resume
+                View Resume
               </button>
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <div className="relative">
-              <div className="absolute inset-0 bg-[#E57200] rounded-full blur-2xl opacity-20 scale-110"></div>
-              <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-[#E57200] to-[#232D4B] p-1">
-                <div className="w-full h-full rounded-full bg-[#B0B8C9] flex items-center justify-center text-6xl font-bold text-white" style={{ fontFamily: 'Sora, sans-serif' }}>
-                  YT
-                </div>
-              </div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-[#E57200] rounded-full blur-2xl opacity-15 scale-110"></div>
+            <div className="relative w-[360px] h-[360px] rounded-full border-[4px] border-[#E57200] overflow-hidden shadow-[0_0_60px_rgba(229,114,0,0.18)]">
+              <img
+                src="/yog_tadhani_main_pic.jpg"
+                alt="Yog Tadhani"
+                className="w-full h-full object-cover object-top scale-[1.05]"
+                style={{ objectPosition: 'center 6%' }}
+              />
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -110,19 +114,8 @@ export default function App() {
             A Little About Me
           </h2>
           <p className="text-[#444444] text-[17px] leading-[1.8] mb-10">
-            I'm a student at UVA studying Computer Science with a minor in Engineering Business. I enjoy building software that is both technically solid and useful to real people. My interests span software engineering, product-minded development, and research-driven problem solving. I'm especially excited by opportunities where I can combine technical depth with practical impact.
+            I’m a student at the University of Virginia studying Computer Science with a minor in Engineering Business. I’m especially interested in building software that solves practical problems for real people. Most recently, at HoosHack 2026, I worked on a dorm designer that used 3D room modeling to help first-year students visualize shared dorm spaces before move-in. The goal was to make it easier for students to understand how their room could function, decide what to bring, and plan around shared space constraints. Experiences like that have made me excited about software engineering that combines technical depth with useful, human-centered design.
           </p>
-          <div className="flex gap-4 justify-center">
-            <button className="bg-[#E57200] text-white px-8 py-3 rounded-full hover:bg-[#cc6600] transition-colors">
-              View Resume
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="border-2 border-[#232D4B] text-[#232D4B] px-8 py-3 rounded-full hover:bg-[#232D4B] hover:text-white transition-colors"
-            >
-              Contact Me
-            </button>
-          </div>
         </div>
       </section>
 
@@ -143,7 +136,7 @@ export default function App() {
             <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] h-full bg-[#E57200]"></div>
 
             {/* Experience Entries */}
-            <div className="space-y-16">
+            <div className="space-y-0">
               {/* Entry 1 - Right Side */}
               <div className="flex items-center">
                 <div className="w-1/2 pr-12"></div>
@@ -152,15 +145,18 @@ export default function App() {
                   <div className="absolute w-[48px] h-[2px] bg-[#E57200] left-full"></div>
                 </div>
                 <div className="w-1/2 pl-12">
-                  <div className="bg-white rounded-xl shadow-lg p-7">
+                  <div className="bg-white rounded-xl shadow-md p-7 max-w-[460px]">
                     <h3 className="text-[#232D4B] font-bold text-[22px] mb-2">
                       Software Engineering Intern
                     </h3>
                     <p className="text-[#666] text-[14px] font-medium mb-2">
-                      Company Name · London, UK
+                      Organised Co · London, UK
                     </p>
-                    <p className="text-[#E57200] text-[13px]">
+                    <p className="text-[#E57200] text-[13px] mb-3">
                       Jun 2025 – Jul 2025
+                    </p>
+                    <p className="text-[#444] text-[15px] leading-[1.7]">
+                      Built and supported a backend sync system that enabled real-time supplier data updates using the Wix REST API and MongoDB in an Agile environment.
                     </p>
                   </div>
                 </div>
@@ -169,15 +165,18 @@ export default function App() {
               {/* Entry 2 - Left Side */}
               <div className="flex items-center">
                 <div className="w-1/2 pr-12 flex justify-end">
-                  <div className="bg-white rounded-xl shadow-lg p-7">
+                  <div className="bg-white rounded-xl shadow-md p-7 max-w-[460px]">
                     <h3 className="text-[#232D4B] font-bold text-[22px] mb-2">
-                      Research Assistant
+                      General Research Assistant
                     </h3>
                     <p className="text-[#666] text-[14px] font-medium mb-2">
-                      UVA Darden School of Business
+                      UVA Darden School of Business · Charlottesville, VA
                     </p>
-                    <p className="text-[#E57200] text-[13px]">
-                      Sep 2024 – May 2025
+                    <p className="text-[#E57200] text-[13px] mb-3">
+                      Sept 2024 – May 2025
+                    </p>
+                    <p className="text-[#444] text-[15px] leading-[1.7]">
+                      Analyzed large-scale financial datasets and built optimization models in Python and Gurobi to uncover market trends and improve allocation decisions in underrepresented markets of Africa.
                     </p>
                   </div>
                 </div>
@@ -196,15 +195,69 @@ export default function App() {
                   <div className="absolute w-[48px] h-[2px] bg-[#E57200] left-full"></div>
                 </div>
                 <div className="w-1/2 pl-12">
-                  <div className="bg-white rounded-xl shadow-lg p-7">
+                  <div className="bg-white rounded-xl shadow-md p-7 max-w-[460px]">
                     <h3 className="text-[#232D4B] font-bold text-[22px] mb-2">
-                      Tier 1 Supervisor
+                      Tier 1 Supervisor, Web Development Division
                     </h3>
                     <p className="text-[#666] text-[14px] font-medium mb-2">
-                      FRDJ Business Group LLC
+                      IRDI Business Group LLC · Remote, CA
                     </p>
-                    <p className="text-[#E57200] text-[13px]">
+                    <p className="text-[#E57200] text-[13px] mb-3">
                       Jan 2025 – May 2025
+                    </p>
+                    <p className="text-[#444] text-[15px] leading-[1.7]">
+                      Led development of a secure company website using Laravel, PHP, and SQLite while managing both admin and visitor-facing functionality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Entry 4 - Left Side */}
+              <div className="flex items-center">
+                <div className="w-1/2 pr-12 flex justify-end">
+                  <div className="bg-white rounded-xl shadow-md p-7 max-w-[460px]">
+                    <h3 className="text-[#232D4B] font-bold text-[22px] mb-2">
+                      Web Developer Intern
+                    </h3>
+                    <p className="text-[#666] text-[14px] font-medium mb-2">
+                      IRDI Business Group LLC · Remote, CA
+                    </p>
+                    <p className="text-[#E57200] text-[13px] mb-3">
+                      Aug 2024 – Dec 2024
+                    </p>
+                    <p className="text-[#444] text-[15px] leading-[1.7]">
+                      Strengthened and rebuilt parts of the company’s web infrastructure after a cyber attack while improving site traffic, security, and user trust.
+                    </p>
+                  </div>
+                </div>
+                <div className="relative flex items-center justify-center w-12 shrink-0">
+                  <div className="absolute w-3 h-3 bg-[#E57200] rounded-full"></div>
+                  <div className="absolute w-[48px] h-[2px] bg-[#E57200] right-full"></div>
+                </div>
+                <div className="w-1/2 pl-12"></div>
+              </div>
+
+
+              {/* Entry 5 - Right Side */}
+              <div className="flex items-center">
+                <div className="w-1/2 pr-12"></div>
+                <div className="relative flex items-center justify-center w-12 shrink-0">
+                  <div className="absolute w-3 h-3 bg-[#E57200] rounded-full"></div>
+                  <div className="absolute w-[48px] h-[2px] bg-[#E57200] left-full"></div>
+                </div>
+                <div className="w-1/2 pl-12">
+                  <div className="bg-white rounded-xl shadow-md p-7 max-w-[460px]">
+                    <h3 className="text-[#232D4B] font-bold text-[22px] mb-2">
+                      Quantum Physics Research Assistant
+                    </h3>
+                    <p className="text-[#666] text-[14px] font-medium mb-2">
+                      UVA Department of Physics · Charlottesville, VA
+                    </p>
+                    <p className="text-[#E57200] text-[13px] mb-3">
+                      Aug 2023 – May 2024
+                    </p>
+                    <p className="text-[#444] text-[15px] leading-[1.7]">
+                      Developed Python-based computational models and visualizations to support holographic laser experiments and quantum research.
                     </p>
                   </div>
                 </div>
@@ -365,14 +418,14 @@ export default function App() {
           </p>
           <div className="flex gap-6 justify-center">
             <a
-              href="mailto:yog@example.com"
+              href="mailto:tadhaniyog@gmail.com"
               className="bg-white text-[#232D4B] px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-[#E57200] hover:text-white transition-colors"
             >
               <Mail size={20} />
               Send an Email
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/yog-tadhani-9998a01b4/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#232D4B] px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-[#E57200] hover:text-white transition-colors"
