@@ -93,7 +93,7 @@ export default function App() {
             <div className="absolute inset-0 bg-[#E57200] rounded-full blur-2xl opacity-15 scale-110"></div>
             <div className="relative w-[360px] h-[360px] rounded-full border-[4px] border-[#E57200] overflow-hidden shadow-[0_0_60px_rgba(229,114,0,0.18)]">
               <img
-                src="/yog_tadhani_main_pic.jpg"
+                src="/yog_tadhani_main_pic2.png"
                 alt="Yog Tadhani"
                 className="w-full h-full object-cover object-top scale-[1.05]"
                 style={{ objectPosition: 'center 6%' }}
@@ -284,10 +284,10 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden shadow-xl h-[380px]">
               <div className="bg-[#232D4B] p-12 flex flex-col justify-center">
                 <h3 className="text-white font-bold text-[26px] mb-4">
-                  Project Alpha
+                  DormDraft (Dorm Designer)
                 </h3>
                 <p className="text-[#B0B8C9] text-[15px] leading-[1.7] mb-6">
-                  A comprehensive web application built with modern technologies. Features include real-time data processing, user authentication, and an intuitive dashboard for data visualization.
+                  An interactive 3D dorm room visualizer that lets students explore their assigned space, drag and arrange furniture to scale, and plan layouts before move-in.
                 </p>
                 <button className="self-start border-2 border-[#E57200] text-[#E57200] px-6 py-2 rounded-full text-[14px] hover:bg-[#E57200] hover:text-white transition-colors flex items-center gap-2">
                   View Project
