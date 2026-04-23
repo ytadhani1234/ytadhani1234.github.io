@@ -5,6 +5,27 @@ import { Link } from 'react-router-dom';
 export default function HomePage() {
   const [activeSection, setActiveSection] = useState('');
   const [isDormDraftHovered, setIsDormDraftHovered] = useState(false);
+  const [clickCount, setClickCount] = useState(0);
+  const [showAltPic, setShowAltPic] = useState(false);
+
+  const handleProfileClick = () => {
+    setClickCount((prev) => {
+        const newCount = prev + 1;
+
+        if (newCount === 3) {
+        setShowAltPic(true);
+
+        // revert after 2 seconds
+        setTimeout(() => {
+            setShowAltPic(false);
+        }, 2000);
+
+        return 0; // reset counter
+        }
+
+        return newCount;
+    });
+    };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -101,10 +122,11 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-[#E57200] rounded-full blur-2xl opacity-15 scale-110"></div>
               <div className="relative w-[360px] h-[360px] rounded-full border-[4px] border-[#E57200] overflow-hidden shadow-[0_0_60px_rgba(229,114,0,0.18)]">
                 <img
-                  src="/yog_tadhani_main_pic2.png"
-                  alt="Yog Tadhani"
-                  className="w-full h-full object-cover object-top scale-[1.05]"
-                  style={{ objectPosition: 'center 6%' }}
+                    src={showAltPic ? "/yog_tadhani_main_pic.png" : "/yog_tadhani_main_pic2.png"}
+                    alt="Yog Tadhani"
+                    onClick={handleProfileClick}
+                    className="w-full h-full object-cover object-top scale-[1.05] cursor-pointer"
+                    style={{ objectPosition: 'center 6%' }}
                 />
               </div>
             </div>
