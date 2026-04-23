@@ -94,7 +94,7 @@ export default function HomePage() {
               <p className="text-white text-[28px] font-semibold leading-tight">
                 University of Virginia, School of Engineering
               </p>
-              <p className="text-[#E57200] text-[20px] font-medium leading-relaxed">
+              <p className="text-[#FF8A1F] text-[20px] font-medium leading-relaxed">
                 Computer Science BS <span className="text-white/50">|</span> Engineering Business Minor
               </p>
             </div>
@@ -102,7 +102,7 @@ export default function HomePage() {
             <div className="flex gap-4 pt-4">
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-[#E57200] text-white px-8 py-3 rounded-full hover:bg-[#cc6600] transition-colors"
+                className="border-2 border-[#E57200] text-[#FF8A1F] px-8 py-3 rounded-full hover:bg-[#E57200] hover:text-white transition-colors"
               >
                 Contact Me
               </button>
@@ -125,8 +125,8 @@ export default function HomePage() {
                     src={showAltPic ? "/yog_tadhani_main_pic.png" : "/yog_tadhani_main_pic2.png"}
                     alt="Yog Tadhani"
                     onClick={handleProfileClick}
-                    className="w-full h-full object-cover object-top scale-[1.05] cursor-pointer"
-                    style={{ objectPosition: 'center 6%' }}
+                    className="w-full h-full object-cover object-top scale-[1.15] cursor-pointer -translate-x-2 transition-transform duration-300"
+                    style={{ objectPosition: '30% -13%' }}
                 />
               </div>
             </div>
@@ -313,7 +313,7 @@ export default function HomePage() {
                 </p>
                 <Link
                   to="/projects/dormdraft"
-                  className="self-start border-2 border-[#E57200] text-[#E57200] px-6 py-2 rounded-full text-[14px] hover:bg-[#E57200] hover:text-white transition-colors flex items-center gap-2"
+                  className="self-start border-2 border-[#FF8A1F] text-[#FF8A1F] px-6 py-2 rounded-full text-[14px] hover:bg-[#E57200] hover:text-white transition-colors flex items-center gap-2"
                 >
                   View Project
                   <ExternalLink size={14} />
@@ -357,7 +357,7 @@ export default function HomePage() {
                 <p className="text-[#B0B8C9] text-[15px] leading-[1.7] mb-6">
                   An innovative mobile-first solution designed to streamline workflows. Implements advanced algorithms for optimization and provides seamless integration with existing systems.
                 </p>
-                <button className="self-start border-2 border-[#E57200] text-[#E57200] px-6 py-2 rounded-full text-[14px] hover:bg-[#E57200] hover:text-white transition-colors flex items-center gap-2">
+                <button className="self-start border-2 border-[#FF8A1F] text-[#FF8A1F] px-6 py-2 rounded-full text-[14px] hover:bg-[#E57200] hover:text-white transition-colors flex items-center gap-2">
                   View Project
                   <ExternalLink size={14} />
                 </button>
@@ -373,7 +373,7 @@ export default function HomePage() {
                 <p className="text-[#B0B8C9] text-[15px] leading-[1.7] mb-6">
                   A research-driven tool that combines machine learning with practical business applications. Demonstrates the intersection of technical capability and real-world problem solving.
                 </p>
-                <button className="self-start border-2 border-[#E57200] text-[#E57200] px-6 py-2 rounded-full text-[14px] hover:bg-[#E57200] hover:text-white transition-colors flex items-center gap-2">
+                <button className="self-start border-2 border-[#FF8A1F] text-[#FF8A1F] px-6 py-2 rounded-full text-[14px] hover:bg-[#E57200] hover:text-white transition-colors flex items-center gap-2">
                   View Project
                   <ExternalLink size={14} />
                 </button>
