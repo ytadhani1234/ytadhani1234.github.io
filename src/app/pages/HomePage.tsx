@@ -18,7 +18,7 @@ export default function HomePage() {
         // revert after 2 seconds
         setTimeout(() => {
             setShowAltPic(false);
-        }, 2000);
+        }, 500);
 
         return 0; // reset counter
         }
